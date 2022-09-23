@@ -29,3 +29,9 @@ const dadosGeraisPiloto = {
 console.log(dadosGeraisPiloto);
 
 console.log("just a test to see if webhook is working property...");
+
+const dados = [{ mapa: ["antonio", "breno", "tico"] }];
+
+console.log(dados[0].mapa.length);
+
+console.log("teste webhook");
