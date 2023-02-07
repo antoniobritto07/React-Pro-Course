@@ -1,16 +1,16 @@
-const pessoa = {
+/* const pessoa = {
   nome: "Antonio",
   sobrenome: "Britto",
   idade: 22,
 };
-/* 
+
 const { nome, sobrenome, idade } = pessoa;
 
 console.log(nome, sobrenome, idade);
  */
 /* ----------- */
 
-const piloto = {
+/* const piloto = {
   dadosPessoais: {
     nome: "Ayrton Senna",
     idade: 34,
@@ -35,3 +35,4 @@ const dados = [{ mapa: ["antonio", "breno", "tico"] }];
 console.log(dados[0].mapa.length);
 
 console.log("teste webhook");
+ */
