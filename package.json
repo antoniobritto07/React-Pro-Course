@@ -1,0 +1,25 @@
+{
+  "name": "react-pro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "validator": "^13.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoniobritto07/React-Pro-Course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antoniobritto07/React-Pro-Course/issues"
+  },
+  "homepage": "https://github.com/antoniobritto07/React-Pro-Course#readme"
+}
