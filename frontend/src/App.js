@@ -1,23 +1,33 @@
-import logo from "./logo.svg";
-import "./App.css";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
-function App() {
-    return (
-        <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>Estudando React</p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
-        </div>
-    );
-}
+const App = () => {
+    const [tasks, setTasks] = useState([]);
+    const remotePath = "https://fsc-task-manager-backend.herokuapp.com";
+
+    const fetchTasks = async () => {
+        try {
+            const { data } = await axios.get(`${remotePath}/tasks`);
+
+            setTasks(data);
+        } catch (error) {
+            console.log(error);
+        }
+    };
+
+    useEffect(() => {
+        fetchTasks();
+    });
+
+    return tasks.map((task) => (
+        <>
+            <h1>{task.description}</h1>
+            <h3>Concluída: {task.isCompleted ? "Sim" : "Não"}</h3>
+            <hr />
+        </>
+    ));
+};
 
 export default App;
+
+//https://fsc-task-manager-backend.herokuapp.com => path to replace instead of localhost:8000
